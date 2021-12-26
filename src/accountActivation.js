@@ -8,7 +8,7 @@ export function Activate() {
   const { token } = useParams();
   useEffect(() => {
     axios
-      .get(`https://backendurlshortener.herokuapp.com/account-verification/${token}`)
+      .get(`https://backendurlshortener.herokuapp.com/user/account-verification/${token}`)
       .then((res) => {
         console.log(res.data);
       })
