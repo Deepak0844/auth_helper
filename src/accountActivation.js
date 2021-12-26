@@ -8,7 +8,7 @@ export function Activate() {
   const [data, setData] = useState();
   useEffect(() => {
     axios
-      .get(`http://localhost:9000/user/account-verification/${token}`)
+      .get(`https://backendurlshortener.herokuapp.com/${token}`)
       .then((res) => {
         console.log(res.data);
       })

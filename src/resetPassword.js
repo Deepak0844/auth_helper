@@ -7,7 +7,7 @@ import TextField from "@mui/material/TextField";
 import { useParams, useHistory } from "react-router-dom";
 import { useEffect } from "react";
 
-const URL = "http://localhost:9000";
+const URL = "https://backendurlshortener.herokuapp.com";
 
 const formValidationSchema = yup.object({
   password: yup
