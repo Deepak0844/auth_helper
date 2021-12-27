@@ -11,8 +11,19 @@ function App() {
     <div className="App">
       <ToastContainer />
       <Switch>
-        <Route exact path="/forgot-password/verify/:token" component={PasswordVerify} />
-        <Route exact path="/password-changed-successfully" component={PasswordChangedMsg} />
+        <Route exact path="/">
+          Home
+        </Route>
+        <Route
+          exact
+          path="/forgot-password/verify/:token"
+          component={PasswordVerify}
+        />
+        <Route
+          exact
+          path="/password-changed-successfully"
+          component={PasswordChangedMsg}
+        />
         <Route exact path="/account-verification/:token" component={Activate} />
       </Switch>
     </div>

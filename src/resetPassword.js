@@ -58,7 +58,7 @@ export function PasswordVerify() {
     });
 
   const verifyBtn = (newPassword) => {
-    console.log(newPassword);
+    // console.log(newPassword);
 
     axios
       .post(`${URL}/user/change-password`, newPassword)
